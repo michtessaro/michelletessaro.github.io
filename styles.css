@@ -164,6 +164,28 @@ nav a.contact-link:hover {
     margin-top: 0; 
     font-size: 1.6rem; 
 }
+/* --------------------------- CARD + BLOG STYLES ----------------------------*/
+
+.card {
+    /* your existing card styles */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.read-more:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
 
 /* ---------------------------
    FOOTER
