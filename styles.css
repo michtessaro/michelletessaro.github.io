@@ -186,6 +186,13 @@ nav a.contact-link:hover {
     border-bottom: 1px solid #000;
 }
 
+.byline {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
 
 /* ---------------------------
    FOOTER
