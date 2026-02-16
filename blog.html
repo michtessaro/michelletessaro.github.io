@@ -67,6 +67,18 @@
 <footer>
     <p>&copy; 2026 Dr. Michelle Tessaro</p>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".blog-container"); // adjust if needed
+    const cards = Array.from(container.querySelectorAll(".card"));
+
+    cards.sort((a, b) => {
+        return new Date(b.dataset.date) - new Date(a.dataset.date);
+    });
+
+    cards.forEach(card => container.appendChild(card));
+});
+</script>
 
 </body>
 </html>
