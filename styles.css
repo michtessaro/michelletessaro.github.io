@@ -186,13 +186,39 @@ nav a.contact-link:hover {
     border-bottom: 1px solid #000;
 }
 
-.byline {
-    font-size: 0.95rem;
-    color: #555;
+/* --------------------------- MAGAZINE-GRADE BYLINE ----------------------------*/
+
+.byline-block {
     margin-top: -10px;
-    margin-bottom: 40px;
-    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 1.4;
 }
+
+.byline-author {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a1c1e;
+    margin: 0;
+}
+
+.byline-role {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    margin: 4px 0 0 0;
+    letter-spacing: 0.2px;
+}
+
+.byline-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: #888;
+    margin: 2px 0 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 
 /* ---------------------------
    FOOTER
