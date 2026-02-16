@@ -1,4 +1,4 @@
-root {
+:root {
     --charcoal: #1a1c1e;
     --off-white-header: #f5f5f5;
     --nav-bg: #f4f2ef;
@@ -77,4 +77,5 @@ nav a:hover { opacity: 0.7; }
 .card h3 { font-family: 'Playfair Display', serif; margin-top: 0; font-size: 1.6rem; }
 
 /* Footer */
-footer { background: var(--charcoal); color: white; padding: 60px 10%; text-align: center; } this was my styles.css file previously with the image london skyline
+footer { background: var(--charcoal); color: white; padding: 60px 10%; text-align: center; }
+
