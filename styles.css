@@ -226,4 +226,37 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* ---------------------------
+   MOBILE NAVIGATION FIX
+----------------------------*/
+@media (max-width: 768px) {
+
+    /* Stack the nav vertically */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5%;
+    }
+
+    /* Shrink the logo */
+    .logo-img {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    /* Wrap the links neatly */
+    nav div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    /* Make each link smaller and more mobile-friendly */
+    nav a {
+        margin-left: 0;
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
 
