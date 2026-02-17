@@ -24,33 +24,30 @@ body {
 }
 
 /* ----------------------------------------------------------
-   NAVIGATION (REFINED)
+   NAVIGATION (MATCHES YOUR HTML)
 ---------------------------------------------------------- */
 
-nav {
+.nav {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 10;
 }
 
-.logo-img { 
-    height: 55px; 
-    width: auto; 
-    display: block; 
-}
-
-nav div {
+.nav-inner {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav a { 
+.logo img {
+    height: 55px;
+    width: auto;
+}
+
+.nav-links a {
     color: var(--off-white-header);
     text-decoration: none;
     font-size: 0.85rem;
@@ -63,16 +60,15 @@ nav a {
     transition: all 0.2s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
     background: rgba(255,255,255,0.2);
 }
 
-/* Contact button */
-nav a.contact-link {
+.contact-btn {
     border: 1px solid var(--off-white-header);
 }
 
-nav a.contact-link:hover {
+.contact-btn:hover {
     background: var(--off-white-header);
     color: var(--charcoal);
 }
