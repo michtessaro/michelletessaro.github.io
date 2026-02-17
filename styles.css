@@ -1,317 +1,85 @@
-:root {
-    --charcoal: #1a1c1e;
-    --off-white-header: #f5f5f5;
-    --nav-bg: #f4f2ef;
-    --white: #ffffff;
-    --light-bg: #f8fafc;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Michelle Tessaro | Home</title>
 
-body { 
-    font-family: 'Inter', sans-serif; 
-    margin: 0; 
-    background: var(--white); 
-    color: var(--charcoal);
-    line-height: 1.6;
-}
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-/* ---------------------------
-   NAVIGATION
-----------------------------*/
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-nav { 
-    background: var(--nav-bg);
-    padding: 5px 10%; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    position: sticky; 
-    top: 0; 
-    z-index: 1000;
-    border-bottom: 1px solid #ddd;
-}
+<body>
 
-.logo-img { 
-    height: 85px; 
-    width: auto; 
-    display: block; 
-}
+<!-- NAVIGATION -->
+<nav>
+    <img src="logo.png" alt="MT Signature Logo" class="logo-img">
+    <div>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="commentary.html">Commentary</a>
+        <a href="mailto:mich.tessaro@gmail.com" class="contact-link">Get in Touch</a>
+    </div>
+</nav>
 
-/* Navigation links */
-nav a { 
-    color: var(--charcoal);
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 25px;
-    letter-spacing: 1px;
+<!-- HERO -->
+<header class="hero">
+    <div>
+        <div class="tagline">Governance • Research • Board Leadership</div>
+        <h1>Dr. Michelle Tessaro</h1>
+        <p style="font-size: 1.1rem; opacity: 0.9; margin-top: 20px; font-weight: 300; letter-spacing: 1px;">
+            Bridging Research to Practice to Improve Social Equity
+        </p>
+    </div>
+</header>
 
-    /* Button-like hover foundation */
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.2s ease, color 0.2s ease;
-}
+<!-- PROFILE SECTION -->
+<section class="section-padding profile-flex">
+    <div class="profile-image">
+        <img src="mtessaro.jpg" alt="Dr. Michelle Tessaro">
+    </div>
 
-/* Hover: ALL nav items turn into blue buttons */
-nav a:hover {
-    background: #1A4F8B;   /* deep professional blue */
-    color: #fff;
-}
+    <div class="profile-text">
+        <h2>Practice & Research</h2>
 
-/* Get in Touch behaves exactly like the others */
-nav a.contact-link {
-    background: none;
-    color: var(--charcoal);
-}
+        <p>Dr Michelle Tessaro is an internationally experienced senior finance and governance leader whose career spans more than two decades across Canada, Europe, and Asia. She has held senior management and executive roles in multiple sectors, leading business growth, driving profitability, scaling operations, and building high‑performing, operationally focused teams.</p>
 
-nav a.contact-link:hover {
-    background: #1A4F8B;
-    color: #fff;
-}
+        <p>A Visiting Professor at Cranfield School of Management, Michelle’s research sits at the intersection of corporate governance, leadership, and structural equity. Her doctoral work examined the role of women on boards and how board composition influences gender diversity in senior executive pipelines — a topic she continues to explore through applied research, advisory work, and public commentary.</p>
 
-/* ---------------------------
-   HERO SECTION
-----------------------------*/
+        <p>As a non‑executive, in addition to strong financial oversight and risk management, Michelle is known for her ability to strengthen board effectiveness, challenge constructively, and support organisations through periods of change.</p>
 
-.hero { 
-    position: relative;
-    height: 70vh;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgba(26, 28, 30, 0.6), rgba(26, 28, 30, 0.6)), 
-                url('view-london-skyline-by-night.jpg');
-    background-size: cover; 
-    background-position: center;
-    color: var(--off-white-header);
-}
+        <p>Central to Michelle’s work is a focus on turning research into practical, actionable guidance for boards, executives, and policymakers. She translates complex academic insights into real‑world decision‑making, helping organisations understand not just what needs to change, but how to change it.</p>
 
-.hero h1 { 
-    font-family: 'Playfair Display', serif; 
-    font-size: 4.5rem; 
-    margin: 0; 
-    font-weight: 400; 
-    letter-spacing: 1px;
-}
+        <p>Her current portfolio blends academic research, board service, and advisory work focused on governance, leadership, and the systems that shape opportunity in organisations.</p>
+    </div>
+</section>
 
-.hero .tagline { 
-    font-weight: 300; 
-    letter-spacing: 6px; 
-    text-transform: uppercase; 
-    font-size: 0.85rem; 
-    margin-bottom: 15px; 
-    opacity: 0.9;
-}
+<!-- FOCUS AREAS -->
+<section class="section-padding" style="background: var(--light-bg);">
+    <h2 style="text-align: center; margin-bottom: 50px; font-family: 'Playfair Display', serif; font-size: 2.5rem;">
+        Focus Areas
+    </h2>
 
-/* ---------------------------
-   SECTIONS
-----------------------------*/
+    <div class="grid">
+        <div class="card">
+            <h3>Structural Inequity</h3>
+            <p>Identifying and dismantling the systemic barriers that prevent women from progressing beyond the first step of management into senior leadership.</p>
+        </div>
 
-.section-padding { 
-    padding: 100px 10%; 
-}
+        <div class="card">
+            <h3>AI: Transforming Boards, Workforces, and Opportunity</h3>
+            <p>Assessing how AI reshapes board effectiveness, organisational risk, and the future of work — and whether these shifts reduce or reinforce structural inequities.</p>
+        </div>
+    </div>
+</section>
 
-.profile-flex { 
-    display: flex; 
-    align-items: flex-start; 
-    gap: 80px; 
-    flex-wrap: wrap; 
-}
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Dr. Michelle Tessaro • DBA, MBA, CMA</p>
+</footer>
 
-.profile-image { 
-    flex: 1; 
-    min-width: 350px; 
-}
-
-.profile-image img { 
-    width: 100%; 
-    border-radius: 2px; 
-    box-shadow: 15px 15px 0px var(--light-bg);
-    border: 1px solid #eee;
-}
-
-.profile-text { 
-    flex: 1.5; 
-    min-width: 300px; 
-}
-
-.profile-text h2 { 
-    font-family: 'Playfair Display', serif; 
-    font-size: 2.8rem; 
-    margin-top: 0; 
-    border-left: 4px solid var(--charcoal); 
-    padding-left: 25px; 
-}
-
-.grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-    gap: 40px; 
-    margin-top: 50px; 
-}
-
-.card { 
-    background: var(--light-bg); 
-    padding: 40px; 
-    border-radius: 4px; 
-    border-top: 1px solid var(--charcoal); 
-    transition: 0.3s ease;
-}
-
-.card h3 { 
-    font-family: 'Playfair Display', serif; 
-    margin-top: 0; 
-    font-size: 1.6rem; 
-}
-/* --------------------------- CARD + BLOG STYLES ----------------------------*/
-
-.card {
-    /* your existing card styles */
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #333;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: all 0.2s ease;
-}
-
-.read-more:hover {
-    color: #000;
-    border-bottom: 1px solid #000;
-}
-
-/* --------------------------- MAGAZINE-GRADE BYLINE ----------------------------*/
-
-.byline-block {
-    margin-top: -10px;
-    margin-bottom: 50px;
-    line-height: 1.4;
-}
-
-.byline-author {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1a1c1e;
-    margin: 0;
-}
-
-.byline-role {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.9rem;
-    color: #555;
-    margin: 4px 0 0 0;
-    letter-spacing: 0.2px;
-}
-
-.byline-date {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    color: #888;
-    margin: 2px 0 0 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-
-/* ---------------------------
-   FOOTER
-----------------------------*/
-
-footer { 
-    background: var(--charcoal); 
-    color: white; 
-    padding: 60px 10%; 
-    text-align: center; 
-}
-/* ---------------------------
-   MOBILE OPTIMISATION
-----------------------------*/
-@media (max-width: 768px) {
-
-    nav {
-        padding: 10px 5%;
-    }
-
-    nav a {
-        margin-left: 15px;
-        font-size: 0.75rem;
-        padding: 6px 10px;
-    }
-
-    .logo-img {
-        height: 60px;
-    }
-
-    .hero {
-        height: 50vh;
-        padding: 0 20px;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero .tagline {
-        font-size: 0.7rem;
-        letter-spacing: 3px;
-    }
-
-    .section-padding {
-        padding: 60px 5%;
-    }
-
-    .profile-flex {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .profile-text h2 {
-        font-size: 2rem;
-        padding-left: 15px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-/* ---------------------------
-   MOBILE NAVIGATION FIX
-----------------------------*/
-@media (max-width: 768px) {
-
-    /* Stack the nav vertically */
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 5%;
-    }
-
-    /* Shrink the logo */
-    .logo-img {
-        height: 60px;
-        margin-bottom: 10px;
-    }
-
-    /* Wrap the links neatly */
-    nav div {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    /* Make each link smaller and more mobile-friendly */
-    nav a {
-        margin-left: 0;
-        font-size: 0.75rem;
-        padding: 6px 10px;
-    }
-
-
+</body>
+</html>
