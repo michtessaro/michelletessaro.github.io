@@ -628,3 +628,8 @@ footer {
         font-size: 0.75rem;
         padding: 6px 10px;
     }
+.hero h1,
+.hero .tagline,
+.hero-subtitle {
+    color: #ffffff !important;
+}
