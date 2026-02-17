@@ -23,7 +23,7 @@ body {
     line-height: 1.6;
 }
 
-/* Simple centered layout helper */
+/* Layout helper */
 .container {
     width: 90%;
     max-width: 1100px;
@@ -31,7 +31,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   NAVIGATION (MATCHES YOUR HTML)
+   NAVIGATION (MATCHES index.html)
 ---------------------------------------------------------- */
 
 .nav {
@@ -53,6 +53,11 @@ body {
     height: 55px;
     width: auto;
     display: block;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
@@ -82,7 +87,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   HERO SECTION (SKYLINE)
+   HERO (MATCHES index.html)
 ---------------------------------------------------------- */
 
 .hero { 
@@ -134,7 +139,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   SECTIONS / PROFILE
+   SECTIONS / PROFILE (MATCHES index.html)
 ---------------------------------------------------------- */
 
 .section { 
@@ -179,7 +184,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   FOCUS AREAS
+   FOCUS AREAS (MATCHES index.html)
 ---------------------------------------------------------- */
 
 .light-bg {
@@ -220,7 +225,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   FOOTER
+   FOOTER (MATCHES index.html)
 ---------------------------------------------------------- */
 
 .footer { 
@@ -256,7 +261,6 @@ body {
 @media (max-width: 768px) {
 
     .nav {
-        position: absolute;
         padding: 15px 0;
         background: rgba(0,0,0,0.5);
     }
@@ -267,7 +271,6 @@ body {
     }
 
     .nav-links {
-        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
