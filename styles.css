@@ -23,6 +23,13 @@ body {
     line-height: 1.6;
 }
 
+/* Simple centered layout helper */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 /* ----------------------------------------------------------
    NAVIGATION (MATCHES YOUR HTML)
 ---------------------------------------------------------- */
@@ -32,7 +39,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 10%;
+    padding: 20px 0;
     z-index: 10;
 }
 
@@ -45,6 +52,7 @@ body {
 .logo img {
     height: 55px;
     width: auto;
+    display: block;
 }
 
 .nav-links a {
@@ -74,7 +82,7 @@ body {
 }
 
 /* ----------------------------------------------------------
-   HERO SECTION (MATCHES YOUR HTML)
+   HERO SECTION (SKYLINE)
 ---------------------------------------------------------- */
 
 .hero { 
@@ -126,26 +134,26 @@ body {
 }
 
 /* ----------------------------------------------------------
-   SECTIONS
+   SECTIONS / PROFILE
 ---------------------------------------------------------- */
 
-.section-padding { 
-    padding: 100px 10%; 
+.section { 
+    padding: 100px 0; 
 }
 
-.profile-flex { 
+.profile { 
     display: flex; 
     align-items: flex-start; 
     gap: 80px; 
     flex-wrap: wrap; 
 }
 
-.profile-image { 
+.profile-img { 
     flex: 1; 
     min-width: 350px; 
 }
 
-.profile-image img { 
+.profile-img img { 
     width: 100%; 
     border-radius: 2px; 
     box-shadow: 15px 15px 0px var(--light-bg);
@@ -171,18 +179,29 @@ body {
 }
 
 /* ----------------------------------------------------------
-   FOCUS AREAS GRID
+   FOCUS AREAS
 ---------------------------------------------------------- */
+
+.light-bg {
+    background: var(--light-bg);
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
 
 .grid { 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
     gap: 40px; 
-    margin-top: 50px; 
+    margin-top: 10px; 
 }
 
 .card { 
-    background: var(--light-bg); 
+    background: var(--white); 
     padding: 40px; 
     border-radius: 4px; 
     border-top: 1px solid var(--charcoal); 
@@ -204,40 +223,63 @@ body {
    FOOTER
 ---------------------------------------------------------- */
 
-footer { 
+.footer { 
     background: var(--charcoal); 
     color: white; 
-    padding: 60px 10%; 
-    text-align: center; 
+    padding: 40px 0; 
     margin-top: 40px;
 }
 
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--off-white-header);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 /* ----------------------------------------------------------
-   MOBILE OPTIMISATION
+   MOBILE
 ---------------------------------------------------------- */
 
 @media (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
-        padding: 15px 5%;
+    .nav {
+        position: absolute;
+        padding: 15px 0;
         background: rgba(0,0,0,0.5);
     }
 
-    nav div {
+    .nav-inner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
 
-    nav a {
+    .nav-links a {
         margin-left: 0;
         font-size: 0.75rem;
     }
 
-    .logo-img {
+    .logo img {
         height: 50px;
-        margin-bottom: 10px;
     }
 
     .hero {
@@ -249,16 +291,16 @@ footer {
         font-size: 3rem;
     }
 
-    .hero .tagline {
+    .tagline {
         font-size: 0.7rem;
         letter-spacing: 3px;
     }
 
-    .section-padding {
-        padding: 60px 5%;
+    .section {
+        padding: 60px 0;
     }
 
-    .profile-flex {
+    .profile {
         flex-direction: column;
         gap: 40px;
     }
@@ -271,5 +313,9 @@ footer {
     .grid {
         grid-template-columns: 1fr;
     }
-}
 
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
