@@ -103,6 +103,31 @@ nav a.contact-link:hover {
     margin-bottom: 15px; 
     opacity: 0.9;
 }
+.hero-mission {
+    max-width: 800px; /* Prevents the text from stretching across the whole screen */
+    margin: 25px auto 0; /* Centers the block and adds space below the name */
+    padding: 0 20px;
+}
+
+.mission-primary {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.mission-secondary {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem; /* Slightly larger for readability */
+    line-height: 1.6; /* Balanced spacing between lines */
+    font-weight: 300;
+    opacity: 0.85;
+    font-style: italic; /* Gives it an "expert quote" feel */
+}
 
 /* ---------------------------
    SECTIONS
