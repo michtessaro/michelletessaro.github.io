@@ -338,4 +338,16 @@ footer {
         margin-left: 0;
         font-size: 0.75rem;
         padding: 6px 10px;
+        .hero-mission {
+    margin-top: 15px; /* Tighter spacing for smaller screens */
+}
+
+.mission-primary {
+    font-size: 0.7rem; /* Shrinks the uppercase tagline slightly */
+    letter-spacing: 2px;
+}
+
+.mission-secondary {
+    font-size: 0.95rem; /* Prevents the main text from feeling overwhelming */
+    line-height: 1.4;
     }
