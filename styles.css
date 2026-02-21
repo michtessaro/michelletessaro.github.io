@@ -144,19 +144,20 @@ nav a.contact-link:hover {
     padding-left: 25px; 
 }
 
-.grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-    gap: 40px; 
-    margin-top: 50px; 
+.grid {
+    display: grid;
+    /* This tells the browser to fit as many 300px columns as it can, or stay at 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.card { 
-    background: var(--light-bg); 
-    padding: 40px; 
-    border-radius: 4px; 
-    border-top: 1px solid var(--charcoal); 
-    transition: 0.3s ease;
+.card {
+    background: white;
+    padding: 30px;
+    border-top: 3px solid #d4af37; /* Adds the gold accent line to the top of each card */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .card h3 { 
